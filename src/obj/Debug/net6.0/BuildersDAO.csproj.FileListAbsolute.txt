@@ -1,0 +1,12 @@
+/home/hien/aelfContracts/capstone_aelf/src/bin/Debug/net6.0/BuildersDAO.deps.json
+/home/hien/aelfContracts/capstone_aelf/src/bin/Debug/net6.0/BuildersDAO.dll
+/home/hien/aelfContracts/capstone_aelf/src/bin/Debug/net6.0/BuildersDAO.pdb
+/home/hien/aelfContracts/capstone_aelf/src/obj/Debug/net6.0/BuildersDAO.csproj.AssemblyReference.cache
+/home/hien/aelfContracts/capstone_aelf/src/obj/Debug/net6.0/BuildersDAO.GeneratedMSBuildEditorConfig.editorconfig
+/home/hien/aelfContracts/capstone_aelf/src/obj/Debug/net6.0/BuildersDAO.AssemblyInfoInputs.cache
+/home/hien/aelfContracts/capstone_aelf/src/obj/Debug/net6.0/BuildersDAO.AssemblyInfo.cs
+/home/hien/aelfContracts/capstone_aelf/src/obj/Debug/net6.0/BuildersDAO.csproj.CoreCompileInputs.cache
+/home/hien/aelfContracts/capstone_aelf/src/obj/Debug/net6.0/BuildersDAO.dll
+/home/hien/aelfContracts/capstone_aelf/src/obj/Debug/net6.0/refint/BuildersDAO.dll
+/home/hien/aelfContracts/capstone_aelf/src/obj/Debug/net6.0/BuildersDAO.pdb
+/home/hien/aelfContracts/capstone_aelf/src/obj/Debug/net6.0/ref/BuildersDAO.dll

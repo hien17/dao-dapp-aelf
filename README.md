@@ -165,28 +165,91 @@ Now that your contract is deployed, you can interact with it using the aelf-comm
 aelf-command send $CONTRACT_ADDRESS -a $WALLET_ADDRESS -p $WALLET_PASSWORD -e https://tdvw-test-node.aelf.io Initialize
 ```
 ```shell
-
+✔ Fetching contract successfully!
+✔ Succeed!
+AElf [Info]: 
+Result:
+{
+  "TransactionId": "b76637863437e304531e450e3f82cd67a0c106f8a42b6ea3ee4286c4c01f4d91"
+} 
+✔ Succeed!
 ```
 #### Join the DAO
 ```shell
 aelf-command send $CONTRACT_ADDRESS -a $WALLET_ADDRESS -p $WALLET_PASSWORD -e https://tdvw-test-node.aelf.io joinDAO
 ```
 ```shell
+✔ Fetching contract successfully!
 
+If you need to pass file contents as a parameter, you can enter the relative or absolute path of the file
+
+Enter the params one by one, type `Enter` to skip optional param:
+? Enter the required param <value>: renvwy4neaUgk2ce1qztSSbEjjt1zupQf1UzuR5jbQucUjXfi
+The params you entered is:
+"renvwy4neaUgk2ce1qztSSbEjjt1zupQf1UzuR5jbQucUjXfi"
+✔ Succeed!
+AElf [Info]: 
+Result:
+{
+  "TransactionId": "3b436af4d486df3f9044bd4b32a00394b544fec9e02fb6e979ec6298f295b10e"
+} 
+✔ Succeed!
 ```
 #### Create a Proposal
 ```shell
 aelf-command send $CONTRACT_ADDRESS -a $WALLET_ADDRESS -p $WALLET_PASSWORD -e https://tdvw-test-node.aelf.io CreateProposal
 ```
 ```shell
+✔ Fetching contract successfully!
 
+If you need to pass file contents as a parameter, you can enter the relative or absolute path of the file
+
+Enter the params one by one, type `Enter` to skip optional param:
+? Enter the required param <creator>: renvwy4neaUgk2ce1qztSSbEjjt1zupQf1UzuR5jbQucUjXfi
+? Enter the required param <title>: Proposal#1
+? Enter the required param <description>: Description#1
+? Enter the required param <voteThreshold>: 1
+The params you entered is:
+{
+  "creator": "renvwy4neaUgk2ce1qztSSbEjjt1zupQf1UzuR5jbQucUjXfi",
+  "title": "Proposal#1",
+  "description": "Description#1",
+  "voteThreshold": 1
+}
+✔ Succeed!
+AElf [Info]: 
+Result:
+{
+  "TransactionId": "896fd7ffc73cc6cd8dff33501930d5a0e663d600844de2a3dfef0e5667c40c16"
+} 
+✔ Succeed!
 ```
 #### Vote on a Proposal
 ```shell
 aelf-command send $CONTRACT_ADDRESS -a $WALLET_ADDRESS -p $WALLET_PASSWORD -e https://tdvw-test-node.aelf.io VoteOnProposal
 ```
 ```shell
+✔ Fetching contract successfully!
 
+If you need to pass file contents as a parameter, you can enter the relative or absolute path of the file
+
+Enter the params one by one, type `Enter` to skip optional param:
+? Enter the required param <voter>: renvwy4neaUgk2ce1qztSSbEjjt1zupQf1UzuR5jbQucUjXfi
+? Enter the required param <proposalId>: 0
+? Enter the required param <vote>: true
+The params you entered is:
+{
+  "voter": "renvwy4neaUgk2ce1qztSSbEjjt1zupQf1UzuR5jbQucUjXfi",
+  "proposalId": 0,
+  "vote": true
+}
+✔ Succeed!
+AElf [Info]: 
+Result:
+{
+  "TransactionId": "36b62beeae0f8f9c964c892d66a34616d42ea221347a7fd5bbc655d4f915d7fa"
+} 
+✔ Succeed!
 ```
 
 #### Get All Proposals
@@ -194,7 +257,35 @@ aelf-command send $CONTRACT_ADDRESS -a $WALLET_ADDRESS -p $WALLET_PASSWORD -e ht
 aelf-command call $CONTRACT_ADDRESS -a $WALLET_ADDRESS -p $WALLET_PASSWORD -e https://tdvw-test-node.aelf.io GetAllProposals
 ```
 ```shell
-
+✔ Fetching contract successfully!
+✔ Calling method successfully!
+AElf [Info]: 
+Result:
+{
+  "proposals": [
+    {
+      "yesVotes": [
+        "renvwy4neaUgk2ce1qztSSbEjjt1zupQf1UzuR5jbQucUjXfi"
+      ],
+      "noVotes": [],
+      "id": "0",
+      "title": "Proposal #1",
+      "description": "This is the first proposal of the DAO",
+      "status": "PASSED",
+      "voteThreshold": 1
+    },
+    {
+      "yesVotes": [],
+      "noVotes": [],
+      "id": "1",
+      "title": "Proposal#1",
+      "description": "Description#1",
+      "status": "IN PROGRESS",
+      "voteThreshold": 1
+    }
+  ]
+} 
+✔ Succeed!
 ```
 
 #### Get Member Count
@@ -202,7 +293,14 @@ aelf-command call $CONTRACT_ADDRESS -a $WALLET_ADDRESS -p $WALLET_PASSWORD -e ht
 aelf-command call $CONTRACT_ADDRESS -a $WALLET_ADDRESS -p $WALLET_PASSWORD -e https://tdvw-test-node.aelf.io GetMemberCount
 ```
 ```shell
-
+✔ Fetching contract successfully!
+✔ Calling method successfully!
+AElf [Info]: 
+Result:
+{
+  "value": 1
+} 
+✔ Succeed!
 ```
 
 #### Check if an Address is a Member
@@ -210,7 +308,21 @@ aelf-command call $CONTRACT_ADDRESS -a $WALLET_ADDRESS -p $WALLET_PASSWORD -e ht
 aelf-command call $CONTRACT_ADDRESS -a $WALLET_ADDRESS -p $WALLET_PASSWORD -e https://tdvw-test-node.aelf.io GetMemberExist
 ```
 ```shell
+✔ Fetching contract successfully!
 
+If you need to pass file contents as a parameter, you can enter the relative or absolute path of the file
+
+Enter the params one by one, type `Enter` to skip optional param:
+? Enter the required param <value>: renvwy4neaUgk2ce1qztSSbEjjt1zupQf1UzuR5jbQucUjXfi
+The params you entered is:
+"renvwy4neaUgk2ce1qztSSbEjjt1zupQf1UzuR5jbQucUjXfi"
+✔ Calling method successfully!
+AElf [Info]: 
+Result:
+{
+  "value": true
+} 
+✔ Succeed!
 ```
 ### 7. Verify Contract Deployment
 

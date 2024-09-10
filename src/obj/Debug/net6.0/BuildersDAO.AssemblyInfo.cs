@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BuildersDAO")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bb1822606713108234322f3998edffc9982b6248")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c097bab5ce0d0e5f941b343215439c6123d09cd8")]
 [assembly: System.Reflection.AssemblyProductAttribute("BuildersDAO")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BuildersDAO")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
